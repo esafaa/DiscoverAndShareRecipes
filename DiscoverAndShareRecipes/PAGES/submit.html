@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Recipe | Recipe Sharing</title>
+  <link
+      rel="stylesheet"  href="../fontawesome-free-5.12.1-web/css/all.min.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    /* Internal CSS */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    td {
+      padding: 8px;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #recipe-name,
+    #ingredients,
+    #instructions {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+    }
+
+    #category {
+      width: 100%;
+      padding: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+      <!-- navbar -->
+    <!-- nav button -->
+    <span  class="nav-btn" id="nav-btn"  style="color: white;">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li><a href="submit.html" class="nav-link">Share</a></li>
+        <li><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+<!-- header  -->
+<header>
+  <h1> Share Recipe</h1>
+</header>
+<section class="contact">
+  <div class="section-center clearfix">
+<article class="contact-form">
+  <h3>Share your recipe with us</h3>
+    <!-- Recipe submission table -->
+    <form id="submit-form">
+      <div class="form-group">
+      <table id="submit-table">
+        <tr>
+          <td><label for="recipe-name">Recipe Name:</label></td>
+          <td><input type="text" id="recipe-name" required style="background-color: #f9f9f9;"></td>
+        </tr>
+        <tr>
+          <td><label for="ingredients">Ingredients:</label></td>
+          <td><textarea id="ingredients" required style="border: 1px solid #ccc;"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="instructions">Instructions:</label></td>
+          <td><textarea id="instructions" required style="border: 1px solid #ccc;"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="category">Category:</label></td>
+          <td>
+            <select id="category" style="background-color: #f9f9f9;">
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+</div>
+      <button type="submit" class="submit-btn btn">Submit Recipe</button>
+      
+    </form>
+  </section>
+ 
+  <script src="../js/share.js"></script>
+</body>
+<!-- footer -->
+<footer class="footer">
+  <div class="section-center">
+    <div class="social-icons">
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <!-- end of social icon -->
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- end of social icon -->
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+        <!-- end of social icon -->
+      </div>
+      <script src="../js/nav.js"></script>
+    </div>
+  </footer>
+  
+</html>
